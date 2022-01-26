@@ -1,0 +1,103 @@
+Server
+=> Traditional
+=> 2 slots - 16GB ram - 32 GB
+Normally - 32 people
+Thershold - 40 people
+> 40 - crash
+=> appln = 1 GB of ram / person
+=> 30 employees 
+60 employees
+=> More servers to accomodate more users...
+=> Cost was very high............
+====================================================
+- Ecommerce - 32 GB Server
+- 10-15 customers !!! -> 1gb application size
+-> Size of the customers increases suddenly because of some offers.......
+-> 2 nd server - 64 customers
+    -> 10-15 customers 
+    -> 120 customers - crash !!!
+-> 4 servers - 128 customers 
+========================================================
+=> 2 servers 
+  100 GB HD 100 GB HD
+  32 GB RAM 32 GB RAM
+========================================================
+What is Cloud
+=> Server without any limitations
+=> We serve the server, storage, tools, support, etc.. over the internet on a very continous manner
+Why cloud
+=> Storage
+=> compute
+=> Support - Updation of your server OS, etc...
+=> Back up
+=> Various Diff types of Databases
+=> Implemented AI on your cloud - tracks the no of users who visit your website
+    32GB - 1 GB appln - 30 people - 33 people
+=> Pay for what you use.
+    1GB HD
+    64 GB RAM
+Manage, Monitor, Security, Storage, Network, etc...
+Benefits of cloud?
+=> Low Cost - Pay only for what we use
+=> Flexibility/Agility - Change quickly as per req
+=> High Efficiency - Used to the maximum level
+=> Reliability - 24*7 online
+=> Scalability - Vertical[Internally] or Horizontal[Externally]
+=> GeoLocation - Strategic Location
+=> Disaster Management
+Service Models
+IaaS -  Vendor manages the H/W.
+        We will maange the OS, S/w and data
+PaaS -  Vendor manages the H/W and OS
+    We will manage the s/w and data
+SaaS -  Vendor manages the H/W, OS and S/w
+    We will manage only data
+Serverless computing:
+=> When a developer is working on the s/w and not focusing on the H/W and the OS
+=> It overlaps with PaaS
+Deployment Models
+    Private - Controlled by Organization
+        - On premises
+        - To handle H/W, O/S, S/W and data.
+    Public  - Controlled by Vendor
+        - cloud warehouse
+    Hybird  - Mixture of Private and Public
+    Community - Group of Organizations
+Cloud Vendors
+    Google Cloud
+    Alibaba Cloud
+    AWS
+    Azure
+    IBM Cloud
+    Terramark
+Salesforce  - CRM S/W
+        - Uses AWS Cloud as a Infrastructure          as a Service
+    
+SOAP Message
+    Envelope            - Mandatory
+        Headers         - Optional
+        Body            - Mandatory
+            Fault       - Optional
+REST API/ URL / Endpoints
+www.youtube.com/views
+    2 ways
+    a. Query Parameter
+        ?key=value
+        www.youtube.com/views?channel=apisero
+    b. URI Parameter
+        /{key}
+        www.youtube.com/views/{channel}
+        www.youtube.com/views/apisero
+REST is derived from HTTP
+    HTTP Methods
+    => CRUD Operation
+    => post, GET, PUT/PATCH, DELETE - HTTP Methods
+    HTTP Status Code
+    1 - iNFORMATION as a response
+    2 - Successful responses
+    3 - Redirection Responses
+    4 - Client side error responses
+    5 - Server Side Error Responses
+404: Not Found
+404 - Status COde
+Not Found - Status Message/ Reason Phrase

@@ -1,0 +1,24 @@
+cd C:\Users\RaghuAnand\batch30
+git add .
+git commit -m "6th commit"
+git push abc master
+
+
+
+
+%BUILD_NUMBER%
+
+Add them before push command
+git config user.email ""
+git config user.name ""
+
+
+
+
+Todays class:
+
+open eclipse
+2. And create neew maven project
+3 .Download the latest junit 4.12.3 and copy the dependencies
+4 .https://www.apachefriends.org/download.html
+https://www.mongodb.com/try/download/community 

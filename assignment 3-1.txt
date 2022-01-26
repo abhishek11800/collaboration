@@ -1,0 +1,94 @@
+package j4demo;
+
+public class Primenumber {
+
+	public  String isprime(int a) {
+		int n = a;
+		if(n==0||n==1){
+		return ("false");
+		}
+		if(n<0){
+		return ("false");
+		}
+		int f=0;
+		for(int i=2;i*i<n;i++){
+		if(n%i==0){
+		f++;
+		}
+		}
+		if(f>0){
+		return("false");
+		}else{
+		return("true");
+		}
+	}
+}
+
+
+
+
+package j4demo;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.*;
+
+public class TestPrime {
+	
+	Primenumber ab = new Primenumber();
+	
+	@Test
+	public void t1()
+	{
+		assertEquals("false",ab.isprime(0));
+		System.out.println("I m Test1");
+	}
+	
+	@Test
+	public void t2()
+	{
+		assertEquals("false",ab.isprime(1));
+		System.out.println("I m Test2");
+	}
+	
+	@Test
+	public void t3()
+	{
+		assertEquals("true",ab.isprime(5));
+		System.out.println("I m Test3");
+	}
+	
+	@Test
+	public void t4()
+	{
+		assertEquals("false",ab.isprime(8));
+		System.out.println("I m Test4");
+	}
+	
+	@Before
+	public void b()
+	{
+		
+		System.out.println("I m Before");
+		
+	}
+	
+	
+	@AfterClass
+	public static void ac()
+	{
+		System.out.println("I m After class");
+	}
+	
+	@BeforeClass
+	public static void bc()
+	{
+		
+		System.out.println("I m Before Class");
+	}
+	
+	@After
+	public void a()
+	{
+		System.out.println("I m After");
+	}
+}

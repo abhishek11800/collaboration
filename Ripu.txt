@@ -1,0 +1,41 @@
+Maven a Built Tool
+Maven is a Project Management Tool
+Maven can be accessed using 2 ways
+1. Maven s/w installed locally
+	- Use command prompt to communicate with Maven.
+	- you will be responsible to manage everything realted to Maven
+Install maven
+add the env variable path
+2. Maven s/w embedded in a IDE or any other s/w
+	- Use GUI to communicate with Maven.
+	- the IDE/S/w will be responsible.
+Maven Project
+- select the type of project
+	a. maven-archetype-simple	=> quickstart project
+	b. maven-archetype-webapp	=> web application project
+	c. etc.......
+- package name	= GroupID
+- project name	= ArtifactID
+Maven -> executes all its phases and a jar file is created
+These jar file is converted into a container with JRE added into it.
+These container will be deployed in the Mule run time.
+[Backend - Mule run time is actually hosted inside the Anypoint Studio, By using
+your own system resources the project will be executed. In short i can say that
+you system will act as a server]
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+mkdir mymvndemo
+cd mymvndemo
+mvn package
+mvn archetype:generate -DgroupId=com.sri -DartifactId=Mydemo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn exec:java -Dexec.mainClass="com.sri.App"
+
+
+<properties>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+  </properties>

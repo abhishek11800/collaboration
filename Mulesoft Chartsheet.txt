@@ -1,0 +1,27 @@
+1. Set Variable Component - It is used to declare a variable and store value inside it.
+
+2 . Batch Job Component - It behaves similar to nested if where the if is represented by batch step component. 
+
+3 . Choice Component - It is similar to if else statement but the if and elseif is replaced by when keyword and the last else is replaced  by default keyword . 
+
+4 . Scatter-Gather Component - It is similar to switch but without 
+				1 . No break statements
+				2 . No default statement
+				3 . Cannot select the case
+			* All the cases will be executed parallely
+5  . Foreach Component - It is same as the java foreach statement  . 
+6 . First Successful Component - Similar to while loop . The loop stops executing when the condition is met or True . 
+7 . Until Successful Component - Similar to while loop . It executes till the condition becomes False .
+8 . Flow reference Component - Used to manipulate the flow (Similar to control statements) .  
+9 . In dataview no need to specify any datatypes . It follows the java script like syntax we used VAR , CONS , LET . 
+10 . Try Scope - Similar to Try block . 
+11 . On Error Propogates Component - This component is similar to catch and Throw.
+12 . On Error Continue Component - This component is similar to catch and finally . 
+13 . Error Handler Component - Similar to exception handling , it is inside  this component we enclosed the onerror propagate or onerror continue . 
+14 . In mulesoft, whenever the data is in java format then this data implements LinkedHash map class . 
+15 . In mulesoft , the testing of mule applications is carried by M-Unit which is similar to J-Unit.
+	 Very recently we have M-Unit Recorder which automates the execution of testcases.
+16 . For connecting the database with the mule application we have a connector called as database(It has multiple operaions such as Select, Delete , etc..).
+17 . To implement SOAP web services - Web service Consumer Connector
+					- This connector has only one operations called as Consume.
+18 . To implement RUST web Services we have Multiple Connectors such as , HTTP , VM , JMS , Socket , etc..

@@ -1,0 +1,47 @@
+1. Write a Java Program to illustrate Update Query using JDBC driver and XAMPP MariaDB.
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class Testmysql {
+	public static void main(String[] args) {
+		
+		try {
+		//importing the driver into our class
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		//Use Driver Manager to invoke the jdbc driver &
+		//Use the Connection to pass the server details &
+		//also to make a connection with the server
+		Connection myconn = DriverManager.getConnection
+				("jdbc:mysql://localhost:3306/batch30","root","");
+		Statement myquery = myconn.createStatement();
+		String sql = "insert into employees values('Priyanshu','21','API008','SE')";
+		myquery.executeUpdate(sql);
+		ResultSet myresponse = myquery.executeQuery("select * from employees");
+		while(myresponse.next())	//row by row it will be iterated
+		{
+			System.out.println(
+					myresponse.getString(1) + " " +
+					myresponse.getInt(2) + " " +
+					myresponse.getString(3)  + " " +
+					myresponse.getString(4)
+					);
+		}
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+}
+
+
+Output:
+Vijay 45 API001 CEO
+charles 35 API005 Sales Manager
+Rohit 32 API003 HR
+Priyanshu 21 API008 SE
+
+C:\Users\Ripu Mishra\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MongoDB Inc

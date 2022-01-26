@@ -1,0 +1,121 @@
+Data Formats
+=> Various dataformats for the sake of humans.
+60's - US Army - Bases all over the world
+    - communicate among the bases.
+    - connected all the bases together - Network
+80's - Research Institutions, Corporate Companies,
+Insurance Based, Banks, etc... - branches all over
+the world - communicate - connected - Network
+90's - Internet - Public Network
+            - anyone anywhere can connect.
+Client Server
+The person who makes the request = client
+The person who sends a response = server
+Static Documents - HTML
+The connection b/w the client and server was taken care by "Protocol" - creates a channel b/w the client and the server for communication puposes
+HTTP Protocol - HTML Documents
+req - HTTP Message
+res - HTML Document
+End of 90's 
+    CSS - Styles to static documents
+    JS - Javascript [Procedure Oriented] - minor        features - create simple objects
+START OF 2000'S
+    HTML + CSS + JS -> Simple Dynamic Document
+XML - Xtended Markup Lang - Allow dynamic data
+SOAP Protocol - Simple Dynamic Document
+req - SOAP Message
+res - XML Document
+End of 2000's
+2009 - JS was converted into Object Oriented - major features, etc......
+ HTML + CSS + JS -> Complex Dynamic Document
+???
+Another side:
+    Developer - Craze with Web Applications
+HTML CSS JS PYTHON/JAVA/.NET/etc..
+Google did something even more crazy =>  Google Chrome Browser - JS Compiler - V8 Engine - Made it open source
+JS V8 Engine + Some Features => NodeJS
+One more side of the story
+    => Begin of 2010's - FaceBook - Users !!!
+        - Server cost Increases...
+    JS - Front End and Back End
+        2011 - ReactJS - Front End Framework
+        2014 - opensource
+Initially -> server - process(Back End) and Data
+We are process everything on our side -> Data is missing.
+Stateless Protocol - REST Architecture 
+req - REST API/URL
+res - Any Format Document - JSON Format
+Protocol
+=> Connection is mandatory
+=> Server is always overloaded
+=> Cannot handle a rush of users
+Stateless Protocol
+=> Connection is Optional
+=> Server is not overloaded
+=> Can handle a rush of users
+JSON - Java script object Notation
+Soap
+REST
+XML
+JSON
+=============================================
+AT&T - Manufacturing Network Devices
+=> installed around 20k devices all over USA.
+= Problem with device s/w
+= solution - patch which should be installed in the device
+=> All the devices are connected to the AT&T Server...........
+    --- the could not find a way ---
+YAML
+- Yet Another Markup Language
+- Yain't Another Markup Language
+- It is a template - skeleton structure with some predefined structure
+excel sheet --- Yaml Template ----- Server
+YANG - Yet Another Next Generation
+YAML + JSON
+====================================================
+XML
+=> Indentation is not Mandatory But used for better readability
+=> It is Case Sensitive in Nature
+=> Data is represented in the form of Elements i.e. Opening Tag , Closing Tag and Content b/w them
+=> For Xml Elements it is mandatory to have a parent.
+JSON
+=> Indentation is not Mandatory But used for better readability
+=> It is Case Sensitive in Nature
+=> Data is represented in the form of Key value pair enclosed within Curly Braces and it is separated by :
+=> For Json Elements it is not mandatory to have a parent.
+YAML
+=> Indentation is Mandatory
+=> It is Case Sensitive in Nature.
+=> Data is represented in the form of Key value pair and it is separated by :
+=> For Yaml Elements it is not mandatory to have a parent.
+<Apisero>
+    <Department>Learning</Department>
+    <Name>Raghu Anand</Name>
+    <Age>31</Age>
+    <Salary>500</Salary>
+    <Skillset type="array">
+        <value>C</value>
+        <value>C++</value>
+        <value>Java</value>
+    </Skillset>
+</Apisero>
+{
+    "Apisero": {
+            "Department":"Learning",
+            "Name":"Raghu Anand",
+            "Age": 31,
+            "Salary": 500,
+            "Skillset": ["C","C++","Java"]
+        }
+}
+---
+Apisero:
+ Department: "Learning"
+ Name: "Raghu Anand"
+ Age: 31
+ Salary: 500
+ Skillset:
+  - "C"
+  - "C++"
+  - "Java"
+RAML - REST API MODELLING LANG - JSON + YAML - API Specification
